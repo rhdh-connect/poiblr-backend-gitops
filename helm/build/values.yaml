@@ -1,0 +1,15 @@
+app:
+  name: poiblr-poi-backend-app
+  namespace: poiblr
+  cluster: .apps.rosa-8lznb.l07n.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-connect/poiblr-backend
+  org: rhdh-connect
+  name: poiblr-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: poiblr/poi-backend-app
+  tag: latest
